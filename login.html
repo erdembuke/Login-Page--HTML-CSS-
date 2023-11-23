@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!--external css dosyasinin link ile entegre edilmesi-->
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <!--Sayfanin soldaki form ve sagdaki fotograf kismini en basta bir butun olarak tanimlayip
+        sonrasinda sag sol seklinde bolup butunden parcaya dogru ilerledim-->
+    <main class="container-main">
+        <section class="container-main-left">
+            <!--Welcome Title'i ve altindaki yazinin tanimlanmasi-->
+            <header class="main-title">
+                <span class="title-text">Welcome</span>
+                <span class="title-text-under">We are glad to see you back with us</span>
+            </header>
+            <!--Username & Password bilgilerini girdigimiz form kismi ve inputlarin tanimlanmasi-->
+            <form class="main-login-form">
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <button id="next-btn" type="submit">NEXT</button>
+            </form>
+            <!--"Login with others" yazisi ve altindaki alternatif login seceneklerinin bulundugu
+            kismin tanimlanmasi-->
+            <div class="main-login-others">
+                <!--Login with other text'i ve etrafindaki cizgilerin tanimlandigi alan-->
+                <div class="login-others-text-container">
+                    <div class="login-line"></div>
+                    <span class="login-text">Login</span>
+                    <span class="login-other-text">with Others</span>
+                    <div class="login-line"></div>
+                </div>
+                <!--Login with Google / Login with Facebook button elementlerinin tanimlanmasi-->
+                <div class="other-login-container">
+                    <!--Google-->
+                    <button class="other-login-options">
+                        <div class="other-login-options-content">
+                            <img src="images/google-icon.svg" alt="google-icon">
+                            <span>Login with</span>
+                            <a href="" class="other-login-options-text">Google</a>
+                        </div>
+                    </button>
+                    <!--Facebook-->
+                    <button class="other-login-options">
+                        <div class="other-login-options-content">
+                            <img src="/images/facebook-icon.svg" alt="facebook-icon">
+                            <span>Login with</span>
+                            <a href="" class="other-login-options-text">Facebook</a>
+                        </div>
+                    </button>
+
+                </div>
+            </div>
+        </section>
+        <!--Sayfanin sagindaki buyuk fotograf, goruntu herhangi bir sebepten acilmadigi zaman 
+        text'i gorunmesi icin "alt" ile birlikte eklendi-->
+        <section class="container-image">
+            <img src="/images/Rectangle 4.png" alt="rectangle-logo-icon">
+        </section>
+    </main>
+    <!--Sayfanin sol altinda yarisi gorunen vector, goruntu herhangi bir sebepten acilmadigi zaman 
+        text'i gorunmesi icin "alt" ile birlikte eklendi-->
+    <img src="images/Vector.png" alt="vector-icon" class="vector">
+</body>
+
+</html>
